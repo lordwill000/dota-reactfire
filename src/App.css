@@ -1,28 +1,131 @@
-.App {
-  text-align: center;
+html,
+body {
+  color: #67757c;
+  font-family: 'Roboto', sans-serif;
 }
 
-.App-logo {
+body {
+  background-color: #383f48;
+}
+
+.bg-dark {
+  background: #282f3a;
+}
+
+.bg-dota {
+  background: #93352d;
+  transition: 0.3s ease-in;
+}
+
+.bg-dota:hover {
+  background: #b12f26;
+}
+
+.full-width {
+  width: 100%;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #fff;
+}
+
+input {
+  margin: 10px 0;
+}
+
+/* navbar */
+
+.top-nav {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #fff;
+  padding: 10px 20px;
+}
+
+.nav-col {
+  width: 50%;
+}
+
+.logo-wrapper.nav-col {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.logo-wrapper.nav-col img {
+  display: inline;
+}
+
+.logo-wrapper.nav-col span {
+  font-size: 22px;
+}
+
+.page-control-wrapper.nav-col {
+  text-align: right;
+}
+
+.Navbar-logo {
   animation: App-logo-spin infinite 20s linear;
-  height: 80px;
-}
-
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
+  height: 40px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* page */
+.page-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.page-col {
+  border-radius: 10px;
+  padding: 30px;
+}
+
+.add-hero-wrapper.page-col {
+  margin-right: 30px;
+  width: 30%;
+}
+
+.add-hero-wrapper.page-col .btn {
+  color: #fff;
+}
+
+.hero-list-wrapper.page-col {
+  width: 70%;
+}
+.hero-list-wrapper.page-col ul li {
+  border: none;
+  border-bottom: 1px solid #545556;
+  border-radius: 0;
+  color: #fff;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.2s ease-in-out;
+}
+.hero-list-wrapper.page-col ul li:hover {
+  background: #2f3238;
 }
