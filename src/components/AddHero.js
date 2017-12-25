@@ -14,21 +14,26 @@ export default class AddHero extends Component {
   render() {
     return (
       <form onSubmit={this.onAddHeroSubmit}>
-        <input
-          type="text"
-          name="heroName"
-          onChange={this.onHeroNameInputChange}
-          value={this.heroName}
-          placeholder="Hero name"
-        />
-        <input
-          type="text"
-          name="heroPrimaryAtt"
-          onChange={this.onHeroNameInputChange}
-          value={this.heroPrimaryAtt}
-          placeholder="Hero Primary Attribute"
-        />
-        <button>Add hero</button>
+        <h4 className="text-center">Add Hero</h4>
+        <div className="form-group">
+          <input
+            className="form-control"
+            type="text"
+            name="heroName"
+            onChange={this.onHeroNameInputChange}
+            value={this.heroName}
+            placeholder="Hero name"
+          />
+          <input
+            className="form-control"
+            type="text"
+            name="heroPrimaryAtt"
+            onChange={this.onHeroNameInputChange}
+            value={this.heroPrimaryAtt}
+            placeholder="Hero Primary Attribute"
+          />
+          <button className="btn bg-dota full-width">Add</button>
+        </div>
       </form>
     );
   }

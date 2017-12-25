@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import '../App.css';
 import firebase from '../firebase';
+import Navbar from './Navbar';
 import HeroList from './HeroList';
 import AddHero from './AddHero';
 
@@ -15,8 +16,15 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <AddHero />
-        <HeroList heroes={this.state.heroes} />
+        <Navbar />
+        <div className="page-content container">
+          <div className="add-hero-wrapper page-col bg-dark">
+            <AddHero />
+          </div>
+          <div className="hero-list-wrapper page-col bg-dark">
+            <HeroList heroes={this.state.heroes} />
+          </div>
+        </div>
       </div>
     );
   }

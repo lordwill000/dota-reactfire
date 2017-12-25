@@ -3,7 +3,7 @@ import firebase from '../firebase';
 
 const HeroListItem = hero => {
   const heroName = hero.hero.heroName;
-  return <li>{heroName}</li>;
+  return <li className="list-group-item bg-dark">{heroName}</li>;
 };
 
 export default HeroListItem;

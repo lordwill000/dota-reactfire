@@ -6,7 +6,7 @@ const HeroList = props => {
   const HeroesSingle = props.heroes.map(hero => {
     return <HeroListItem key={hero.key} hero={hero} />;
   });
-  return <ul>{HeroesSingle}</ul>;
+  return <ul className="list-group">{HeroesSingle}</ul>;
 };
 
 export default HeroList;
